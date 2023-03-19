@@ -1,0 +1,2764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BS-5 styles -->
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-utilities.min.css" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/static/css/style.min.css" />
+
+    <!-- IF -->
+    <link rel="stylesheet" href="/static/fonts/IF/icofont.min.css" />
+
+    <!-- page title -->
+    <title>Monbi</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="menu" id="page-menu">
+            <!-- HEADER -->
+            <div class="menu__header">
+                <a href="#" class="menu__logo">
+                    <img src="/static/imgs/logo/logo_white.svg" alt="logo" />
+                </a>
+                <button type="button" id="menu-toggler" class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="menu__content">
+                <!-- USER VIEW -->
+                <div class="menu__user"></div>
+
+                <!-- MAIN -->
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <button type="button" class="menu-button active">
+                            <i class="icofont-businessman"></i>
+                            <span>Бизнес профиль</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-key"></i>
+                            <span>Ключи доступа</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-wallet"></i>
+                            <span>Мои Счета</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-pay"></i>
+                            <span>Мои платежи</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-pay"></i>
+                            <span>Мои выплаты</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-connection"></i>
+                            <span>Рефералы</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- PAY -->
+                <div class="menu__sub-title">
+                    <h4 class="h4">Создать платеж</h4>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-card"></i>
+                            <span>Внутренний</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-credit-card"></i>
+                            <span>На карту</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-credit-card"></i>
+                            <span>Массовый</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-credit-card"></i>
+                            <span>Вывод крипты</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- USER INFO -->
+                <div class="menu__sub-title">
+                    <h4 class="h4">Учетная запись</h4>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-user-alt-4"></i>
+                            <span>Профиль</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button type="button" class="menu-button">
+                            <i class="icofont-ui-password"></i>
+                            <span>Изменить пароль</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="menu__footer">
+                <a href="#" class="menu-link">Документация</a>
+                <a href="#" class="menu-link">API</a>
+                <a href="#" class="menu-link">Написать в техподдержку</a>
+            </div>
+        </nav>
+
+        <div class="content p-4">
+            <div class="w-100 h-100 content__container rounded shadow">
+
+                <!-- bussines profile -->
+                <section class="section canvas active">
+                    <form action="#" method="POST" class="container-fluid h-100 p-0 d-flex flex-column">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    Бизнес профиль
+                                </h2>
+
+                                <h4 class="h4 fs-5 mt-2 text-grey">
+                                    <span>Статус: </span>
+                                    <span>Подтвержден</span>
+                                </h4>
+                            </div>
+
+                            <button type="button" class="btn-primary">
+                                Сохранить
+                            </button>
+                        </div>
+
+                        <!-- content -->
+                        <div class="row d-flex justify-content-center align-items-center section__content">
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">Клиентский номер</span>
+                                <input type="number" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">Ссылка на документы (URL)</span>
+                                <input type="url" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">Бизнес имя</span>
+                                <input type="text" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">CallBack URL</span>
+                                <input type="url" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">Эл. почта</span>
+                                <input type="email" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">Success URL</span>
+                                <input type="url" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">Телефон</span>
+                                <input type="tel" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">Fail URL</span>
+                                <input type="url" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">ID Реферера</span>
+                                <input type="number" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input">
+                                <span class="input__title">Веб-сайт</span>
+                                <input type="url" name="" id="" class="input__field" />
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input-logo">
+                                <label for="" class="input-logo__field">
+                                    <div class="input-logo__view" id="logo-select-view">
+                                        <span>Логотип</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <i class="icofont-image logo-choice-icon fs-5"></i>
+                                        <span>Нажмите для выбора</span>
+                                    </div>
+                                    <input type="file" id="logo-select" />
+                                </label>
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input-logo"></div>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- keys -->
+                <section class="section canvas ">
+                    <div class="container-fluid h-100 p-0 d-flex flex-column">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    Мои ключи доступа
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="row d-flex justify-content-center align-items-start section__content">
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input input-read-only">
+                                <span class="input__title">Read only</span>
+                                <input type="number" name="" id="" class="input__field" readonly
+                                    placeholder="Необходимо сгенерировать новый ключ" />
+                                <button type="button" class="btn-secondary mt-4">
+                                    Сгенерировать новый ключ
+                                </button>
+
+                                <div class="mt-4 input-read-only-info">
+                                    <p class="text-grey my-2">Read Only - ключ доступа только для чтения</p>
+                                    <p class="text-grey my-2">Некоторые методы с таким ключом будут не доступны</p>
+                                    <p class="text-grey my-2">Используйте ключ READ ONLY для проверки статусов
+                                        транзакций, при работе с
+                                        историей транзакций</p>
+                                </div>
+                            </div>
+
+                            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 input input-read-only">
+                                <span class="input__title">Full Access</span>
+                                <input type="number" name="" id="" class="input__field w-100" readonly
+                                    placeholder="Необходимо сгенерировать новый ключ" />
+                                <button type="button" class="btn-secondary mt-4">
+                                    Сгенерировать новый ключ
+                                </button>
+
+                                <div class="mt-4 input-read-only-info">
+                                    <p class="text-grey my-2">Full Access ключ используется при создании любого запроса
+                                    </p>
+                                    <p class="text-grey my-2">Если Full Access будет скомпрометирован, то злоумыленник
+                                        получит полный доступ к
+                                        вашему счету</p>
+
+                                </div>
+                            </div>
+
+                            <form action="" method="POST"
+                                class="col-11 col-xl-10 xol-xxl-10 col-lg-10 mt-5 d-flex flex-column">
+                                <h5 class="h5 fs-5">Ограничения по IP</h5>
+
+                                <p class="text-grey my-3">Для ограничения доступа к API по IP адресам укажите список
+                                    разрешенных IP адресов ниже. Каждый адрес в отдельной строке</p>
+
+                                <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+
+                                <button type="button" class="btn-primary mt-4">Сохранить</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- checks -->
+                <section class="section canvas ">
+                    <div class="container-fluid p-0 h-100 d-flex flex-column section__container">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    Мои счета
+                                </h2>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="input-radio mx-1">
+                                    <input type="radio" id="check-all" name="check-type" checked>
+                                    <label for="check-all">
+                                    </label>
+                                    <span>Все</span>
+                                </div>
+                                <div class="input-radio mx-1">
+                                    <input type="radio" id="check-open" name="check-type">
+                                    <label for="check-open">
+                                    </label>
+                                    <span>Открыт</span>
+                                </div>
+                                <div class="input-radio mx-1">
+                                    <input type="radio" id="check-close" name="check-type">
+                                    <label for="check-close">
+                                    </label>
+                                    <span>Закрыт</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="section__content d-flex flex-column w-100">
+                            <div class="mt-3 px-4 w-100">
+                                <div class="drop-down">
+                                    <button type="button" class="drop-down-trigger" id="valet-drop-trigger">
+                                        <span>Валюта</span>
+                                        <i class="icofont-rounded-down"></i>
+                                    </button>
+                                    <ul class="drop-down-list radio-drop-menu " id="valet-drop-menu">
+                                        <li class="drop-down-item">
+                                            <input type="radio" name="valet-type" id="rub">
+                                            <label for="rub">RUB <i class="icofont-check-alt"></i></label>
+                                        </li>
+                                        <li class="drop-down-item">
+                                            <input type="radio" name="valet-type" id="usd">
+                                            <label for="usd">USD <i class="icofont-check-alt"></i></label>
+                                        </li>
+                                        <li class="drop-down-item">
+                                            <input type="radio" name="valet-type" id="usdt">
+                                            <label for="usdt">USDT <i class="icofont-check-alt"></i></label>
+                                        </li>
+                                        <li class="drop-down-item">
+                                            <input type="radio" name="valet-type" id="btc">
+                                            <label for="btc">BTC <i class="icofont-check-alt"></i></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="check border-top mt-3 px-3 w-100">
+
+                                <div class="check__card-sort w-100 mt-2 py-2">
+                                    <div class="check__card-sort-box">
+                                        <button type="button" class="check__card-sort-button">
+                                            <span>Счет</span>
+                                            <div
+                                                class="mx-2 d-flex flex-column justify-content-center align-items-center">
+                                                <i class="icofont-rounded-up"></i>
+                                                <i class="icofont-rounded-down"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="check__card-sort-box">
+                                        <button type="button" class="check__card-sort-button">
+                                            <span>Валюта</span>
+                                            <div
+                                                class="mx-2 d-flex flex-column justify-content-center align-items-center">
+                                                <i class="icofont-rounded-up"></i>
+                                                <i class="icofont-rounded-down"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="check__card-sort-box">
+                                        <button type="button" class="check__card-sort-button">
+                                            <span>Баланс</span>
+                                            <div
+                                                class="mx-2 d-flex flex-column justify-content-center align-items-center">
+                                                <i class="icofont-rounded-up"></i>
+                                                <i class="icofont-rounded-down"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="check__card-sort-box">
+                                        <button type="button" class="check__card-sort-button">
+                                            <span>Статус</span>
+                                            <div
+                                                class="mx-2 d-flex flex-column justify-content-center align-items-center">
+                                                <i class="icofont-rounded-up"></i>
+                                                <i class="icofont-rounded-down"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="check__card-items w-100 mt-1 scroll-bar border">
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-success me-2"></i>
+                                                <a href="#" class="text-success">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-success me-2"></i>
+                                            <span>Открыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-success me-2"></i>
+                                                <a href="#" class="text-success">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-success me-2"></i>
+                                            <span>Открыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-success me-2"></i>
+                                                <a href="#" class="text-success">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-success me-2"></i>
+                                            <span>Открыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-danger me-2"></i>
+                                                <a href="#" class="text-danger">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-danger me-2"></i>
+                                            <span>Закрыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-danger me-2"></i>
+                                                <a href="#" class="text-danger">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-danger me-2"></i>
+                                            <span>Закрыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-danger me-2"></i>
+                                                <a href="#" class="text-danger">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-danger me-2"></i>
+                                            <span>Закрыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-success me-2"></i>
+                                                <a href="#" class="text-success">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-success me-2"></i>
+                                            <span>Открыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-success me-2"></i>
+                                                <a href="#" class="text-success">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-success me-2"></i>
+                                            <span>Открыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-success me-2"></i>
+                                                <a href="#" class="text-success">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-success me-2"></i>
+                                            <span>Открыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-danger me-2"></i>
+                                                <a href="#" class="text-danger">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-danger me-2"></i>
+                                            <span>Закрыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-danger me-2"></i>
+                                                <a href="#" class="text-danger">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-danger me-2"></i>
+                                            <span>Закрыт</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check__card-item w-100">
+                                        <div class="check__card-item-info check__card-item-check">
+                                            <div class="d-flex align-items-center">
+                                                <i class="circle circle-danger me-2"></i>
+                                                <a href="#" class="text-danger">0001234567890</a>
+                                            </div>
+                                            <p class="mt-2">32rwerdsf@343256654rwefdsf2342356sdf</p>
+                                            <p class="mt-2">
+                                                Default
+                                                <span>BTC</span>
+                                                Account
+                                            </p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-valet">
+                                            <p>USDT</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-balance">
+                                            <p>14800,40</p>
+                                        </div>
+                                        <div class="check__card-item-info check__card-item-status">
+                                            <i class="circle circle-danger me-2"></i>
+                                            <span>Закрыт</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- pays -->
+                <section class="section canvas ">
+                    <div class="container-fluid p-0 h-100 d-flex flex-column section__container">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    Мои платежи
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="section__content w-100 d-flex flex-column">
+                            <div class="mt-2 px-4 pb-4 pays w-100">
+
+                                <form action="#" method="POST" class="d-flex w-100 pays__filter">
+
+                                    <div class="drop-down">
+                                        <button type="button" class="drop-down-trigger" id="check-drop-trigger">
+                                            <span>Счет</span>
+                                            <i class="icofont-rounded-down"></i>
+                                        </button>
+                                        <ul class="drop-down-list radio-drop-menu" id="check-drop-menu">
+                                            <li class="drop-down-item">
+                                                <input type="radio" name="check-type" id="check-1" checked>
+                                                <label for="check-1">Счет 1 <i class="icofont-check-alt"></i></label>
+                                            </li>
+                                            <li class="drop-down-item">
+                                                <input type="radio" name="check-type" id="check-2">
+                                                <label for="check-2">Счет 2 <i class="icofont-check-alt"></i></label>
+                                            </li>
+                                            <li class="drop-down-item">
+                                                <input type="radio" name="check-type" id="check-3">
+                                                <label for="check-3">Счет 3 <i class="icofont-check-alt"></i></label>
+                                            </li>
+                                            <li class="drop-down-item">
+                                                <input type="radio" name="check-type" id="check-4">
+                                                <label for="check-4">Счет 4 <i class="icofont-check-alt"></i></label>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <input type="text" placeholder="#Платежка" class="input__field ms-2 w-base">
+                                    <input type="text" placeholder="C" class="input__field ms-2 w-base">
+                                    <input type="text" placeholder="По" class="input__field ms-2 w-base">
+
+                                    <button type="button" class="btn-primary ms-3">
+                                        Фильтр
+                                    </button>
+                                </form>
+
+                                <div class="py-2 pe-2 d-flex justify-content-end pays__csv">
+                                    <button type="button" class="btn-secondary">
+                                        <i class="icofont-file-text me-1"></i>
+                                        <span>Экспорт в CSV</span>
+                                    </button>
+                                </div>
+
+                                <div class="pays__info border border-bottom-0">
+
+                                    <div class="pays__info-item border-end">
+                                        <span>Платеж</span>
+                                    </div>
+
+                                    <div class="pays__info-item border-end">
+                                        <span>Сумма</span>
+                                    </div>
+
+                                    <div class="pays__info-item border-end">
+                                        <span>Назначение / Счета</span>
+                                    </div>
+
+                                    <div class="pays__info-item">
+                                        <span>Детали</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="pays__items border pb-3 scroll-bar">
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="danger-ward">Неудача</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="danger-ward">Неудача</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="success-ward">Успешно</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="success-ward">Успешно</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="warning-ward">В обработке</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="warning-ward">В обработке</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="success-ward">Успешно</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="success-ward">Успешно</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="success-ward">Успешно</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="success-ward">Успешно</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pays__item border-bottom">
+
+                                        <div class="pays__item-content border-end">
+
+                                            <div class="d-flex justify-content-between align-items-center w-100 px-2">
+                                                <span>#33213412543</span>
+                                                <span class="success-ward">Успешно</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <span>Внутренний Входящий</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="mt-2">
+                                                    <i class="icofont-clock-time fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                                <p class="mt-2">
+                                                    <i class="icofont-ui-calendar fs-5"></i>
+                                                    <span>12.04.2023</span>
+                                                    <span>13:20:14</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <h4 class="h4 fs-4">
+                                                <span>2069,00</span>
+                                                <span>RUB</span>
+                                            </h4>
+                                            <div class="fs-6 d-flex align-items-center mt-2">
+                                                <i class="icofont-money-bag me-2 fs-5"></i>
+                                                <p>
+                                                    <span>0,00</span>
+                                                    <span>RUB</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content border-end">
+                                            <div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="text-grey">Получатель:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>Default RUB account</span>
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3 d-flex flex-column w-100">
+                                                    <span class="text-grey">Плательщик:</span>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-wallet fs-5 me-2"></i>
+                                                        <span>#3345564</span>
+                                                    </p>
+                                                    <p class="d-flex align-items-center mt-1">
+                                                        <i class="icofont-user fs-5 me-2"></i>
+                                                        <span>#241223 / EMCDpr</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pays__item-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- history -->
+                <section class="section canvas ">
+                    <div class="container-fluid p-0 h-100 d-flex flex-column section__container">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    Мои выплаты
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="section__content w-100 d-flex flex-column justify-content-start">
+                            <div class="w-100 h-100 px-3 history pb-4">
+                                <form action="#" method="POST" class="d-flex w-100 history__filter">
+                                    <input type="text" class="input__field w-base me-2" placeholder="С">
+                                    <input type="text" class="input__field w-base me-2" placeholder="По">
+                                    <button type="button" class="btn-primary mx-1">Фильтр</button>
+                                </form>
+
+                                <div class="w-100 history__info border">
+                                    <div class="history__info-item">
+                                        <span>Выплата</span>
+                                    </div>
+                                    <div class="history__info-item border-start">
+                                        <span>Детали</span>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 history__items border border-top-0 scroll-bar">
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="history__item">
+                                        <div class="history__item-content">
+                                            <p>
+                                                <i class="icofont-ui-calendar"></i>
+                                                <span>16.02.2023</span>
+                                            </p>
+                                            <p>
+                                                <i class="icofont-clock-time"></i>
+                                                <span>16:44:25</span>
+                                            </p>
+                                        </div>
+                                        <div class="history__item-content border-start">
+                                            <p>
+                                                <span>Сумма:</span>
+                                                <span>
+                                                    <span>100000,00</span>
+                                                    <span>RUB</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>Количество получателей:</span>
+                                                <span>30</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- referals -->
+                <section class="section canvas ">
+                    <div class="container-fluid d-flex flex-column p-0 h-100 section__container">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    Статистика рефералов
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="section__content w-100 d-flex flex-column justify-content-start">
+                            <div class="w-100 px-3 referals pb-4">
+                                <form action="#" method="POST" class="d-flex w-100 referals__filter">
+
+                                    <input type="text" class="input__field w-base me-2" placeholder="С">
+                                    <input type="text" class="input__field w-base me-2" placeholder="По">
+                                    <button type="button" class="btn-primary mx-1">Фильтр</button>
+                                </form>
+
+                                <div class="w-100 px-3 referals__info border">
+                                    <div class="referals__info-item">
+                                        <span>Реферал</span>
+                                    </div>
+                                    <div class="referals__info-item">
+                                        <span>Комиссия / Сумма</span>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 referals__items border border-top-0 scroll-bar">
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="px-3 py-2 referals__item">
+
+                                        <div class="d-flex flex-column referals__item-referal">
+                                            <h5 class="h5 fs-5">
+                                                EMSDpr
+                                            </h5>
+                                            <span class="d-block mt-2">
+                                                #241223
+                                            </span>
+                                        </div>
+
+                                        <div class="referals__item-info">
+
+                                            <div class="referals__item-info-view-box">
+                                                <div class="referals__item-info-view">
+                                                    <p>RUB</p>
+                                                    <p>10000 RUB + 200 %</p>
+                                                    <p>200000,50 RUB</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>EUR</p>
+                                                    <p>0 EUR + 0 %</p>
+                                                    <p>128,13 EUR</p>
+                                                </div>
+                                                <div class="referals__item-info-view">
+                                                    <p>USD</p>
+                                                    <p>0 USD + 0 %</p>
+                                                    <p>254,0 USD</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="w-100 referals__pag">
+
+                                    <div class="referals__pag-info">
+                                        <span>1-10</span>
+                                        <span>из</span>
+                                        <span>30</span>
+                                        <span>записей</span>
+                                    </div>
+
+                                    <div class="referals__pag-buttons">
+                                        <button type="button" class="btn-pag active">1</button>
+                                        <button type="button" class="btn-pag">2</button>
+                                        <button type="button" class="btn-pag">3</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- internal -->
+                <section class="section canvas ">
+                    <div class="container-fluid d-flex flex-column p-0 h-100 section__container">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    Внутренний перевод
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="section__content w-100 d-flex flex-column justify-content-start">
+                            <form method="POST" action="#" class="w-100 px-3 pb-4 internal">
+
+                                <div class="internal__info text-op">
+
+                                    <p>
+                                        <i class="icofont-info-circle"></i>
+                                        <span>Платежные лимиты: 0,01 - 100 000 000,00 RUB</span>
+                                    </p>
+                                    <p>
+                                        <i class="icofont-info-circle"></i>
+                                        <span>Комиссия: 0,00 RUB</span>
+                                    </p>
+                                    <p>
+                                        <i class="icofont-info-circle"></i>
+                                        <span>Валюта счета получателя должна совпадать с валютой счета отправителя</span>
+                                    </p>
+
+                                </div>
+
+                                <div class="internal__check-from">
+
+                                    <h4 class="fs-4 internal__check-from--title">
+                                        Выберите счет с которого будет сделан перевод
+                                    </h4>
+
+                                    <div class="internal__check-from--item">
+                                        <span class="text-op">Счет</span>
+                                        <div class="drop-down">
+                                            <button type="button" class="drop-down-trigger" id="internal-check-drop-trigger">
+                                                <span>Счет</span>
+                                                <i class="icofont-rounded-down"></i>
+                                            </button>
+                                            <ul class="drop-down-list radio-drop-menu" id="internal-check-drop-menu">
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="internal-check-1" checked>
+                                                    <label for="internal-check-1">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="internal-check-2">
+                                                    <label for="internal-check-2">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="internal-check-3">
+                                                    <label for="internal-check-3">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="internal-check-4">
+                                                    <label for="internal-check-4">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="internal__check-from--item">
+                                        <span class="text-op">Доступные средства</span>
+                                        <span>1450,80 RUB</span>
+                                    </div>
+                                </div>
+
+                                <div class="internal__check-to">
+
+                                    <h4 class="fs-4 internal__check-to--title">
+                                        Укажите номер счета получателя
+                                    </h4>
+
+                                    <div class="internal__check-to--item">
+                                        <span class="text-op">Номер счета</span>
+                                        <input type="number" class="input__field w-base" name="">
+                                    </div>
+
+                                </div>
+
+                                <div class="internal__check-sum">
+
+                                    <h4 class="fs-4 internal__check-to--title">
+                                        Укажите сумму перевода
+                                    </h4>
+
+                                    <div class="internal__check-to--item">
+                                        <span class="text-op">Сумма</span>
+                                        <input type="number" class="input__field w-base" name="">
+                                    </div>
+
+                                    <div class="internal__check-to--item">
+                                        <span class="text-op">Комиссия</span>
+                                        <span>--.--</span>
+                                    </div>
+
+                                    <div class="internal__check-to--item">
+                                        <span class="text-op">Итого</span>
+                                        <span>--.--</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="internal__check-purpose">
+                                    <span class="text-op">Назначение платежа</span>
+                                    <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+                                </div>
+
+                                <div class="internal__check-submit">
+                                    <button type="submit" class="btn-primary">Создать платеж</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- card -->
+                <section class="section canvas ">
+                    <div class="container-fluid d-flex flex-column p-0 h-100 section__container">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    На карту
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="section__content w-100 d-flex flex-column justify-content-start">
+                            <form method="POST" action="#" class="w-100 px-3 pb-4 card">
+
+                                <div class="card__info">
+
+                                    <h6 class="fs-6 text-op">
+                                        Комиссия и лимиты применяемые к переводам на карту
+                                    </h6>
+
+                                    <div class="card__info-limits text-op">
+                                        <span></span>
+                                        <span>Комиссия</span>
+                                        <span>Лимиты</span>
+                                    </div>
+                                    <div class="card__info-limits text-op">
+                                        <span>Visa / MasterCard</span>
+                                        <span>0,50%</span>
+                                        <span>100 - 100 000 RUB</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="card__check-from">
+
+                                    <h4 class="fs-4 card__check-from--title">
+                                        Выберите счет с которого будет сделан перевод
+                                    </h4>
+
+                                    <div class="card__check-from--item">
+                                        <span class="text-op">Счет</span>
+                                        <div class="drop-down">
+                                            <button type="button" class="drop-down-trigger" id="card-check-drop-trigger">
+                                                <span>Счет</span>
+                                                <i class="icofont-rounded-down"></i>
+                                            </button>
+                                            <ul class="drop-down-list radio-drop-menu" id="card-check-drop-menu">
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="card-check-1" checked>
+                                                    <label for="card-check-1">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="card-check-2">
+                                                    <label for="card-check-2">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="card-check-3">
+                                                    <label for="card-check-3">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="card-check-4">
+                                                    <label for="card-check-4">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card__check-from--item">
+                                        <span class="text-op">Доступные средства</span>
+                                        <span>1450,80 RUB</span>
+                                    </div>
+                                </div>
+
+                                <div class="card__check-to">
+
+                                    <h4 class="fs-4 card__check-to--title">
+                                        Укажите номер карты получателя
+                                    </h4>
+
+                                    <div class="card__check-to--item">
+                                        <span class="text-op">Номер карты</span>
+                                        <input type="number" class="input__field w-base" name="">
+                                    </div>
+
+                                </div>
+
+                                <div class="card__check-sum">
+
+                                    <h4 class="fs-4 card__check-to--title">
+                                        Укажите сумму перевода
+                                    </h4>
+
+                                    <div class="card__check-to--item">
+                                        <span class="text-op">Сумма</span>
+                                        <input type="number" class="input__field w-base" name="">
+                                    </div>
+
+                                    <div class="card__check-to--item">
+                                        <span class="text-op">Комиссия</span>
+                                        <span>--.--</span>
+                                    </div>
+
+                                    <div class="card__check-to--item">
+                                        <span class="text-op">Итого</span>
+                                        <span>--.--</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="card__check-purpose">
+                                    <span class="text-op">Назначение платежа</span>
+                                    <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+                                </div>
+
+                                <div class="card__check-submit">
+                                    <button type="submit" class="btn-primary">Создать платеж</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- mass -->
+                <section class="section canvas ">
+                    <div class="container-fluid d-flex flex-column p-0 h-100 section__container">
+                        <!-- header -->
+                        <div class="section__header border-bottom">
+                            <div class="section__title">
+                                <h2 class="h2 fs-2 text-start text-primary">
+                                    Массовые выплаты на карты
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="section__content w-100 d-flex flex-column justify-content-start">
+                            <form method="POST" action="#" class="w-100 px-3 pb-4 mass">
+
+                                <div class="mass__info">
+
+                                    <h5 class="fs-5 text-op">
+                                        Инструкция по массовым выплатам на карты
+                                    </h5>
+
+                                    <p class="text-grey">
+                                        В поле <span class="text-primary">список карт и суммы для выплаты </span> ниже вставьте список в формате <br>
+                                        НОМЕР-КАРТЫ;СУММА <br>
+                                        Пример:  <br>
+                                        1111222233334444;100 <br>
+                                        2222333344445555;200 <br>
+                                        В номере карты указывайте только цифры. Сумма для выплаты, целое число от 100 до 100 000.
+                                    </p>
+
+                                </div>
+
+                                <div class="mass__check-from">
+
+                                    <h4 class="fs-4 mass__check-from--title">
+                                        Выберите счет с которого будет сделан перевод
+                                    </h4>
+
+                                    <div class="mass__check-from--item">
+                                        <span class="text-op">Счет</span>
+                                        <div class="drop-down">
+                                            <button type="button" class="drop-down-trigger" id="mass-check-drop-trigger">
+                                                <span>Счет</span>
+                                                <i class="icofont-rounded-down"></i>
+                                            </button>
+                                            <ul class="drop-down-list radio-drop-menu" id="mass-check-drop-menu">
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="mass-check-1" checked>
+                                                    <label for="mass-check-1">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="mass-check-2">
+                                                    <label for="mass-check-2">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="mass-check-3">
+                                                    <label for="mass-check-3">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                                <li class="drop-down-item">
+                                                    <input type="radio" name="check-type" id="mass-check-4">
+                                                    <label for="mass-check-4">RUB - Default RUB Account <i class="icofont-check-alt"></i></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mass__check-from--item">
+                                        <span class="text-op">Доступные средства</span>
+                                        <span>1450,80 RUB</span>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="mass__check-purpose">
+                                    <h4 class="fs-4 py-3">Получатели и суммы</h4>
+                                    <span class="text-op">Список карт и суммы для выплаты</span>
+                                    <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+                                </div>
+
+
+                                <div class="mass__check-submit">
+                                    <button type="submit" class="btn-primary">Создать платеж</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- cripto -->
+                <section class="section canvas ">
+                    <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center cripto">
+
+                        <div class="cripto__item">
+                            <h4 class="fs-4">
+                                Как вывести USDT со своего счета в Mpspay
+                            </h4>
+
+                            <p>
+                                Для вывода USDT со своего счета в Mpspay вам необходимо отправить сумму USDT <br>
+                                для вывода внутренним переводом на счет 10964 с комментарием:
+                            </p>
+                        </div>
+
+                        <div class="cripto__item">
+                            <h4 class="fs-4">
+                                Как вывести usdt_tron на адрес АДРЕС_ПОЛУЧАТЕЛЯ.
+                            </h4>
+
+                            <p>
+                                Выводы обробатываются вручную в течении 24-х рабочих часов после получения внутреннего перевода. <br>
+                                USDT выводится в виде USDT на блокчейне Tron. <br>
+                                Может взыматься комиссия.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- profile -->
+                <section class="section canvas ">
+                    <div class="container-fluid h-100 profile">
+                        <form action="" method="POST" class="profile__form">
+                            <div class="input">
+                                <span class="input__title">Никнейм</span>
+                                <input type="text" name="" class="input__field w-base" value="example_name">
+                            </div>
+    
+                            <div class="input">
+                                <span class="input__title">Эл. Почта</span>
+                                <input type="text" name="" class="input__field w-base" value="example@gmail.com">
+                            </div>
+    
+                            <div class="input-chb">
+                                <input type="checkbox" name="" id="subscribe" class="input-chb__input w-base">
+                                <label for="subscribe" class="input-chb__label">
+                                    <i class="icofont-check-alt"></i>
+                                </label>
+                                <span class="input-chb__title">Подписка на рассылку</span>
+                            </div>
+    
+                            <div class="input-chb">
+                                <input type="checkbox" name="" id="2fa" class="input-chb__input w-base">
+                                <label for="2fa" class="input-chb__label">
+                                    <i class="icofont-check-alt"></i>
+                                </label>
+                                <span class="input-chb__title">Включить 2FA</span>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- password change -->
+                <section class="section canvas ">
+                    <div class="container-fluid h-100 password-change">
+                        <form action="" method="POST" class="password-change__form">
+                            <div class="input">
+                                <span class="input__title">Новый пароль</span>
+                                <input type="password" name="" class="input__field w-base">
+                            </div>
+    
+                            <div class="input">
+                                <span class="input__title">Подтверждение пароля</span>
+                                <input type="password" name="" class="input__field w-base">
+                            </div>
+
+                            <button type="submit" class="btn-primary mt-3">Изменить пароль</button>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="/static/js/scripts.js"></script>
+</body>
+
+</html>

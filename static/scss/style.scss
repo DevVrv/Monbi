@@ -1,0 +1,21 @@
+// @ IMPORT BASE
+@import 'base/_reset';
+@import 'base/_colors';
+@import 'base/_text';
+@import 'base/_ui';
+@import 'base/_animations';
+
+// @ IMPORT COMPONENTS
+@import 'components/_menu';
+@import 'components/_content';
+
+// @ PAGE
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: $lite-darker;
+}

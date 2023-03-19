@@ -1,0 +1,17 @@
+@keyframes click {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    70% {
+        width: 120%;
+        height: 160%;
+        opacity: 0.150;
+    }
+    100% {
+        width: 140%;
+        height: 180%;
+        opacity: 0; 
+    }
+}
