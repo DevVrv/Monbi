@@ -113,6 +113,10 @@ ul {
   opacity: 0.6;
 }
 
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../../fonts/opensans//OpenSans-VariableFont_wdth,wght.ttf");
+}
 .btn, .btn-secondary, .btn-primary {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1925,4 +1929,5 @@ ul {
           justify-content: space-between;
   overflow: hidden;
   background-color: #f2f2f2;
+  font-family: "Open-Sans";
 }
