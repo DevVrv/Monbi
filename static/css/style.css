@@ -176,8 +176,8 @@ ul {
           transform: scale(0.8);
 }
 .btn-primary.click::before {
-  -webkit-animation: click 0.2s ease-in-out;
-          animation: click 0.2s ease-in-out;
+  -webkit-animation: click 0.3s ease-in-out;
+          animation: click 0.3s ease-in-out;
 }
 
 .btn-secondary {
@@ -754,13 +754,13 @@ ul {
     opacity: 0;
   }
   70% {
-    width: 120%;
-    height: 160%;
-    opacity: 0.15;
-  }
-  100% {
     width: 140%;
     height: 180%;
+    opacity: 0.1;
+  }
+  100% {
+    width: 160%;
+    height: 200%;
     opacity: 0;
   }
 }
@@ -772,13 +772,13 @@ ul {
     opacity: 0;
   }
   70% {
-    width: 120%;
-    height: 160%;
-    opacity: 0.15;
-  }
-  100% {
     width: 140%;
     height: 180%;
+    opacity: 0.1;
+  }
+  100% {
+    width: 160%;
+    height: 200%;
     opacity: 0;
   }
 }

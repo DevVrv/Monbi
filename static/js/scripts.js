@@ -94,14 +94,11 @@ function buttonAnimate(selector, className) {
 
     const buttons = document.querySelectorAll(selector);
 
-    console.log(buttons)
-
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
-            console.log(1)
-            btn.classList.add(className)
+            btn.classList.add(className);
             btn.addEventListener('animationend', () => {
-                btn.classList.remove(className)
+                btn.classList.remove(className);
             });
         });
     });

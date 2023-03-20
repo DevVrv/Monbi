@@ -5,13 +5,13 @@
         opacity: 0;
     }
     70% {
-        width: 120%;
-        height: 160%;
-        opacity: 0.150;
-    }
-    100% {
         width: 140%;
         height: 180%;
+        opacity: 0.1;
+    }
+    100% {
+        width: 160%;
+        height: 200%;
         opacity: 0; 
     }
 }
