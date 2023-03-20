@@ -14,7 +14,7 @@
     @extend .btn;
     background-color: $primary;
     color: $white;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
     position: relative;
     display: flex;
     align-items: center;
@@ -39,9 +39,9 @@
     }
     &.click {
         color: $primary;
-        transform: scale(0.95);
+        transform: scale(0.8);
         &::before {
-            animation: click 0.3s ease-in-out;
+            animation: click 0.2s ease-in-out;
         }
     }
 
