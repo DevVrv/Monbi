@@ -263,7 +263,7 @@ ul {
   padding: 10px 0;
 }
 .input__field, .textarea {
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   height: 2.25rem;
   border-radius: 3px;
   -webkit-box-shadow: 0 0rem 0rem rgba(33, 31, 28, 0.0862745098);
@@ -271,7 +271,7 @@ ul {
   padding: 0 1rem;
   font-size: 1rem;
   color: #2d2b2a;
-  border: 1px solid #f2f2f2;
+  border: 1px solid rgba(33, 31, 28, 0.0862745098);
   width: 100%;
   -webkit-transition: border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;

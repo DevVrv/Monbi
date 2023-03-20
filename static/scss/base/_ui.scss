@@ -115,14 +115,14 @@
     }
 
     &__field {
-        background-color: $lite;
+        background-color: $lite-darker;
         height: 2.25rem;
         border-radius: 3px;
         box-shadow: 0 0rem 0rem $shadow-sm;
         padding: 0 1rem;
         font-size: 1rem;
         color: $dark;
-        border: 1px solid $lite-darker;
+        border: 1px solid $shadow-sm;
         width: 100%;
         transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         &::placeholder {
