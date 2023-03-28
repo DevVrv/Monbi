@@ -472,11 +472,12 @@
             height: fit-content !important;
             & .input__field {
                 width: 100%;
-                margin-top: 0.5rem;
+                margin: 0 !important;
+                margin-top: 0.5rem !important;
             }
 
             & .btn-primary {
-                width: 100%;
+                width: 100% !important;
                 margin: 0 !important;
                 margin-top: 0.5rem !important;
             }

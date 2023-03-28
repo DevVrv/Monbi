@@ -2597,10 +2597,11 @@ body {
   }
   .referals__filter .input__field, .referals__filter .textarea {
     width: 100%;
-    margin-top: 0.5rem;
+    margin: 0 !important;
+    margin-top: 0.5rem !important;
   }
   .referals__filter .btn-primary {
-    width: 100%;
+    width: 100% !important;
     margin: 0 !important;
     margin-top: 0.5rem !important;
   }
