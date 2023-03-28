@@ -139,7 +139,6 @@
         padding-top: 70px !important;
     }
 
-
     .pays {
 
         &__info {
@@ -498,16 +497,16 @@
         align-items: flex-start !important;
         align-content: flex-start !important;
         min-height: fit-content !important;
-        padding-bottom: 5rem;
+        padding-bottom: 6rem;
         
     }
 
     .internal {
-        min-height: fit-content;
+        min-height: fit-content !important;
         display: flex;
         flex-direction: column !important;
         justify-content: flex-start !important;
-        padding: 2rem 0;
+        padding: 1rem 0 3rem 0;
 
         &__check-from {
             margin-top: 1rem;
@@ -525,11 +524,11 @@
     }
 
     .card {
-        min-height: fit-content;
+        min-height: fit-content !important;
         display: flex;
         flex-direction: column !important;
         justify-content: flex-start !important;
-        padding: 2rem;
+        padding: 1rem 0 3rem 0;
 
         &__check-from {
             margin-top: 0.5rem !important;
@@ -549,7 +548,7 @@
         display: flex;
         flex-direction: column !important;
         justify-content: flex-start !important;
-        padding: 2rem;
+        padding: 1rem 0 3rem 0;
 
         &__check-from {
             margin-top: 0.5rem !important;
