@@ -89,6 +89,13 @@ ul {
   padding: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 .text-primary {
   color: #da8645 !important;
 }
@@ -127,7 +134,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0rem 1.5rem;
-  height: 2.25rem;
+  height: 2.5rem;
   border-radius: 3px;
   -webkit-box-shadow: 0 0.5rem 0.75rem rgba(33, 31, 28, 0.0862745098);
           box-shadow: 0 0.5rem 0.75rem rgba(33, 31, 28, 0.0862745098);
@@ -1191,7 +1198,9 @@ ul {
 .section__header {
   height: 10% !important;
   min-height: 10% !important;
-  max-height: 10% !important;
+  max-height: -webkit-fit-content !important;
+  max-height: -moz-fit-content !important;
+  max-height: fit-content !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2289,7 +2298,7 @@ ul {
     padding: 0.5rem !important;
   }
   .pays__csv {
-    margin-top: 1rem !important;
+    margin-top: 0.5rem !important;
   }
 }
 @media (max-width: 650px) {
@@ -2381,6 +2390,7 @@ ul {
   }
   .pays__filter .btn-primary {
     width: 100%;
+    padding: 0 !important;
     margin: 0.5rem 0 0 0 !important;
   }
   .history__info {
@@ -2448,10 +2458,42 @@ ul {
   }
   .history__filter .input__field, .history__filter .textarea {
     width: 47% !important;
+    margin: 0 !important;
   }
   .history__filter .btn-primary {
-    margin: 1rem 0 0 0;
+    margin: 0 !important;
+    margin-top: 0.5rem !important;
     width: 100%;
+  }
+  .referals__info {
+    display: none;
+  }
+  .referals__items {
+    border: 1px solid rgba(130, 130, 130, 0.1215686275) !important;
+    border-radius: 3px;
+  }
+  .referals__item {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .referals__item-info {
+    width: 100% !important;
+  }
+  .referals__item-info-view-box {
+    margin-top: 0.5rem;
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  .cripto {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .cripto__item {
+    height: 45%;
+    width: 90% !important;
   }
 }
 @media (max-width: 425px) {
@@ -2496,5 +2538,8 @@ ul {
             align-items: flex-start !important;
     -ms-flex-line-pack: start !important;
         align-content: flex-start !important;
+    min-height: -webkit-fit-content !important;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
   }
 }
