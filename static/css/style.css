@@ -2595,7 +2595,7 @@ body {
     min-height: -webkit-fit-content !important;
     min-height: -moz-fit-content !important;
     min-height: fit-content !important;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
   }
 }
 @media (max-width: 425px) {
