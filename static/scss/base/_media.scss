@@ -468,6 +468,14 @@
         }
 
     }
+
+    .section__content  {
+        overflow-y: scroll;
+        align-items: flex-start !important;
+        align-content: flex-start !important;
+        min-height: fit-content !important;
+        padding-bottom: 4rem;
+    }
 }
 
 @media (max-width: 425px) {
@@ -503,7 +511,7 @@
 
     }
 
-    .internal, .section__content  {
+    .internal {
         overflow-y: scroll;
         align-items: flex-start !important;
         align-content: flex-start !important;

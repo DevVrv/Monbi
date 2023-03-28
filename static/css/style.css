@@ -2585,6 +2585,18 @@ body {
     height: 45%;
     width: 90% !important;
   }
+  .section__content {
+    overflow-y: scroll;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -ms-flex-line-pack: start !important;
+        align-content: flex-start !important;
+    min-height: -webkit-fit-content !important;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
+    padding-bottom: 4rem;
+  }
 }
 @media (max-width: 425px) {
   .check-header {
@@ -2619,7 +2631,7 @@ body {
   .pays__item-content:nth-child(3) .pays__item-content-3 div {
     margin-top: 0.5rem !important;
   }
-  .internal, .section__content {
+  .internal {
     overflow-y: scroll;
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
