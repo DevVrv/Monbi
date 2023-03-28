@@ -373,7 +373,7 @@
 
     &__items {
         width: 100%;
-        height: 75%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -448,7 +448,8 @@
     }
 
     &__pag {
-        height: 10% !important;
+        height: 15% !important;
+        min-height: fit-content !important;
         display: flex;
         align-items: center;
         justify-content: space-between;
