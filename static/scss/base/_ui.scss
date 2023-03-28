@@ -438,8 +438,8 @@
 // -- colored circle
 .circle {
     display: block;
-    width: 10px;
-    height: 10px;
+    min-width: 10px !important;
+    min-height: 10px !important;
     border-radius: 50%
 }
 .circle-success {
