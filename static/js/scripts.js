@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // @ check drop down 
     toggler('#check-drop-trigger', '#check-drop-menu', 'active', false);
     toggler('#internal-check-drop-trigger', '#internal-check-drop-menu', 'active', false);
+    toggler('#card-check-drop-trigger', '#card-check-drop-menu', 'active', false);
 
     // @ vallet sort
     valetSwitcher('.check__card-sort-button');
