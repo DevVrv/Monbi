@@ -118,10 +118,18 @@
             opacity: 1 !important;
         }
 
+        &__content {
+            height: calc(80% - 70px) !important;
+            min-height: fit-content !important;
+
+        }
+
+
         &.active {
             height: 100vh;
         }
-
+        
+        
     }
 
     .content {

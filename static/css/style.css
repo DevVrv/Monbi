@@ -2164,6 +2164,12 @@ body {
             transform: translateX(0) !important;
     opacity: 1 !important;
   }
+  .menu__content {
+    height: calc(80% - 70px) !important;
+    min-height: -webkit-fit-content !important;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
+  }
   .menu.active {
     height: 100vh;
   }
