@@ -105,6 +105,18 @@ function buttonAnimate(selector, className) {
 
 }
 
+function preview() {
+
+    const item = document.querySelector('#preview');
+    const wrapper = document.querySelector('#page-wrapper');
+
+    setTimeout(() => {
+        item.classList.remove('active');
+        wrapper.classList.add('active');
+    }, 1500);
+
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // @ burger toggler
@@ -129,5 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     buttonAnimate('.btn-primary', 'click');
     buttonAnimate('.btn-secondary', 'click');
-
+    
+    preview();
 });
