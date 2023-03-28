@@ -490,8 +490,70 @@
         align-items: flex-start !important;
         align-content: flex-start !important;
         min-height: fit-content !important;
-        padding-bottom: 6rem;
-        flex: 1 1 auto;
+        padding-bottom: 5rem;
+        
+    }
+
+    .internal {
+        min-height: fit-content;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        padding: 2rem 0;
+
+        &__check-from {
+            margin-top: 1rem;
+        }
+
+        &__check-submit {
+            margin-top: 0.5rem !important;
+        }
+
+        &__check-purpose {
+            margin-top: 0.5rem;
+        }
+
+
+    }
+
+    .card {
+        min-height: fit-content;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        padding: 2rem;
+
+        &__check-from {
+            margin-top: 0.5rem !important;
+        }
+
+        &__check-purpose {
+            margin-top: 0.5rem;
+        }
+
+        &__check-submit {
+            margin-top: 0.5rem !important;
+        }
+    }
+
+    .mass {
+        min-height: fit-content !important;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        padding: 2rem;
+
+        &__check-from {
+            margin-top: 0.5rem !important;
+        }
+
+        &__check-purpose {
+            margin-top: 0.5rem;
+        }
+
+        &__check-submit {
+            margin-top: 0.5rem !important;
+        }
     }
 }
 
@@ -528,17 +590,7 @@
 
     }
 
-    .internal {
-        overflow-y: scroll;
-        align-items: flex-start !important;
-        align-content: flex-start !important;
-        min-height: fit-content !important;
-        
-    }
 
-    .internal__check-submit {
-        margin-top: 0.5rem !important;
-    }
 }
 
 @media (max-height: 760px) {
