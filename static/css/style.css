@@ -2611,7 +2611,10 @@ body {
             justify-content: space-evenly;
   }
   .cripto__item {
-    height: 45%;
+    height: 40% !important;
+    min-height: -webkit-fit-content !important;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
     width: 90% !important;
   }
   .section__content {

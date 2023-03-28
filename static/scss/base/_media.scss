@@ -487,7 +487,8 @@
     .cripto {
         justify-content: space-evenly;
         &__item {
-            height: 45%;
+            height: 40% !important;
+            min-height: fit-content !important;
             width: 90% !important;
         }
 
@@ -609,8 +610,6 @@
         }
 
     }
-
-
 }
 
 @media (max-height: 760px) {
