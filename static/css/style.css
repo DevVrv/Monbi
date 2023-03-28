@@ -2639,7 +2639,14 @@ body {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0 5rem 0;
+    overflow-y: scroll;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -ms-flex-line-pack: start !important;
+        align-content: flex-start !important;
+    min-height: fit-content !important;
   }
   .internal__check-from {
     margin-top: 1rem;
@@ -2665,6 +2672,13 @@ body {
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
     padding: 1rem 0 3rem 0;
+    overflow-y: scroll;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -ms-flex-line-pack: start !important;
+        align-content: flex-start !important;
+    min-height: fit-content !important;
   }
   .card__check-from {
     margin-top: 0.5rem !important;
@@ -2690,6 +2704,13 @@ body {
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
     padding: 1rem 0 3rem 0;
+    overflow-y: scroll;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -ms-flex-line-pack: start !important;
+        align-content: flex-start !important;
+    min-height: fit-content !important;
   }
   .mass__check-from {
     margin-top: 0.5rem !important;
