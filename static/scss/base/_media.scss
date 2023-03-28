@@ -502,13 +502,26 @@
         }
 
     }
-}
 
-@media (max-height: 760px) {
-    .internal {
+    .internal, .section__content  {
         overflow-y: scroll;
         align-items: flex-start !important;
         align-content: flex-start !important;
         min-height: fit-content !important;
+        
+    }
+
+    .internal__check-submit {
+        margin-top: 0.5rem !important;
+    }
+}
+
+@media (max-height: 760px) {
+    .internal, .section__content  {
+        overflow-y: scroll;
+        align-items: flex-start !important;
+        align-content: flex-start !important;
+        min-height: fit-content !important;
+        
     }
 }
