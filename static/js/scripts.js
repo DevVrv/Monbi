@@ -41,7 +41,8 @@ function logo_field(inputSelector = String, viewSelector = String,) {
 function menu(tabsSelector, canvasesSelector) {
 
     const tabs = document.querySelectorAll(tabsSelector),
-        canvases = document.querySelectorAll(canvasesSelector);
+        canvases = document.querySelectorAll(canvasesSelector),
+        menu = document.querySelector('#page-menu');
 
 
     function clean() {
@@ -61,6 +62,12 @@ function menu(tabsSelector, canvasesSelector) {
             tab.classList.add('active');
             if (canvases[index]) {
                 canvases[index].classList.add('active');
+                const rect = document.documentElement.getClientRects()
+                console.log()
+                if (rect[0].width <= 800 || rect.width <= 800 ) {
+                    menu.classList.remove('active');
+                }
+                
             }
         });
     });

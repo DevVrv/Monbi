@@ -461,6 +461,15 @@
         background-color: $dashed;
     }
 }
+.scroll-bar-small {
+    &::-webkit-scrollbar {
+        width: 0.25rem;
+        background-color: $lite-darker;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $dashed;
+    }
+}
 
 // -- colored words
 .colored-word {

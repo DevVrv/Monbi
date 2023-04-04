@@ -24,8 +24,8 @@
     }
 
     &__header {
-        height: 10% !important;
-        min-height: 10% !important;
+        height: 14% !important;
+        min-height: 14% !important;
         max-height: fit-content !important;
         display: flex;
         justify-content: space-between;
@@ -34,13 +34,16 @@
     }
 
     &__content {
-        height: 90% !important;
-        min-height: 90% !important;
-        max-height: 90% !important;
+        height: 86% !important;
+        min-height: 86% !important;
+        max-height: 86% !important;
         display: flex;
         align-items: center;
         justify-content: center;
         align-content: center;
+        overflow-y: scroll;
+        padding: 1rem 0;
+        @extend .scroll-bar-small;
     }
 
 }
@@ -173,16 +176,19 @@
     display: flex;
     flex-direction: column;
     height: 100% !important;
+    overflow-y: scroll;
+    @extend .scroll-bar-small;
 
     &__filter {
-        height: 10%;
+        min-height: fit-content;
+        padding: 1rem 0;
         display: flex;
         align-items: center;
         min-height: fit-content;
     }
 
     &__csv {
-        height: 10%;
+        height: 5rem;
         min-height: fit-content;
         display: flex;
         align-items: center;
@@ -225,7 +231,7 @@
 
     &__items {
         width: 100%;
-        height: 75%;
+        height: 550px !important;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -277,10 +283,12 @@
 .history {
 
     height: 100%;
-    overflow: hidden;
+    overflow-y: scroll;
+    @extend .scroll-bar-small;
 
     &__filter {
-        height: 10% !important;
+        min-height: fit-content !important;
+        padding: 1rem 0;
         display: flex;
         align-items: center;
     }
@@ -312,7 +320,8 @@
     }
 
     &__items {
-        height: 85%;
+        height: 80%;
+        min-height: 300px;
         border-radius: 0 0 3px 3px;
         overflow-y: scroll;
     }
@@ -343,10 +352,12 @@
 
 .referals {
     height: 100%;
-    overflow: hidden;
+    overflow-y: scroll;
+    @extend .scroll-bar-small;
 
     &__filter {
-        height: 10%;
+        min-height: fit-content;
+        padding: 1rem 0;
         display: flex;
         align-items: center;
     }
@@ -468,9 +479,9 @@
 .internal, .card, .mass {
 
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    overflow-y: scroll;
+    @extend .scroll-bar-small;
+
 
     &__info {
         background-color: $lite-darker;
@@ -516,6 +527,7 @@
     }
 
     &__check-from {
+        margin-top: 2rem !important;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -530,6 +542,7 @@
     }
 
     &__check-to {
+        margin-top: 2rem !important;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -543,12 +556,14 @@
     }
 
     &__check-sum {
+        margin-top: 2rem !important;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     &__check-purpose {
+        margin-top: 2rem !important;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -560,6 +575,7 @@
     }
 
     &__check-submit {
+        margin-top: 2rem !important;
         display: flex;
         justify-content: flex-end;
     }
