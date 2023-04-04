@@ -24,9 +24,8 @@
     }
 
     &__header {
-        height: 14% !important;
-        min-height: 14% !important;
-        max-height: fit-content !important;
+        height: 10% !important;
+        min-height: 80px !important;
         display: flex;
         justify-content: space-between;
         align-items: center;

@@ -1199,11 +1199,8 @@ input[type=number]:focus {
   z-index: 10;
 }
 .section__header {
-  height: 14% !important;
-  min-height: 14% !important;
-  max-height: -webkit-fit-content !important;
-  max-height: -moz-fit-content !important;
-  max-height: fit-content !important;
+  height: 10% !important;
+  min-height: 80px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2108,6 +2105,9 @@ body {
   }
 }
 @media (max-width: 880px) {
+  .section__header {
+    min-height: 50px !important;
+  }
   .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -92,6 +92,12 @@
 
 @media (max-width: 880px) {
 
+    .section {
+        &__header {
+            min-height: 50px !important;
+        }
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column !important;
